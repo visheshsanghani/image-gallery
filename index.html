@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+    type="image/png" 
+    href="/premier-league.png">
+    <title>Image Gallery</title>
+
+    <!-------------- CSS -------------->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-------------- Gallery  -------------->
+    <div class="gallery-container">
+        <div class="container">
+            <div class="toogle-button-container">
+            <label class="switch">
+                <input type="checkbox" onclick="toogleTheme(this)">
+                <span class="slider round"></span>
+              </label>
+              <span class="text-color">
+                Dark Theme
+              </span>
+            </div>
+            <!-- Tabs Gallery : Filter -->
+            <ul class="gallery_tabs">
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="manchesterunited">Manchester United</li>
+                <li data-filter="arsenal">Arsenal</li>
+                <li data-filter="manchestercity">Manchester City</li>
+                <li data-filter="liverpool">Liverpool</li>
+            </ul>
+
+            <div class="gallery-image-container" id="gallery-image-container"></div>
+
+            <!------------- Lightbox ------------->
+            <div class="lightbox">
+                <div class="lightbox-container">
+                    <div class="lightbox_content">
+                        <img src="" class="lightbox_img">
+                    </div>
+                </div>
+                <div class="lightbox_close">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------- JavaScript -------------->
+    <script src="./index.js"></script>
+</body>
+
+</html>
